@@ -1,0 +1,137 @@
+[
+  {
+    "trainName": "Express Line",
+    "trainNo": "12345",
+    "sourceStation": "Mumbai",
+    "destinationStation": "Pune",
+    "departureTimeSourceStation": "08:30:00",
+    "arrivalTimeSourceStation": "11:00:00",
+    "arrivesNextDay": false,
+    "seatMatrix": [
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "station": [
+      "Mumbai",
+      "Lonavala",
+      "Pune"
+    ],
+    "stationTime": {
+      "Mumbai": "08:30:00",
+      "Lonavala": "09:45:00",
+      "Pune": "11:00:00"
+    }
+  },
+  {
+    "trainName": "Shatabdi Express",
+    "trainNo": "12001",
+    "sourceStation": "Delhi",
+    "destinationStation": "Agra",
+    "departureTimeSourceStation": "09:00:00",
+    "arrivalTimeSourceStation": "11:30:00",
+    "arrivesNextDay": false,
+    "seatMatrix": [
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "station": [
+      "Delhi",
+      "Mathura",
+      "Agra"
+    ],
+    "stationTime": {
+      "Delhi": "09:00:00",
+      "Mathura": "10:15:00",
+      "Agra": "11:30:00"
+    }
+  },
+  {
+    "trainName": "Southern Express",
+    "trainNo": "56789",
+    "sourceStation": "Chennai",
+    "destinationStation": "Bangalore",
+    "departureTimeSourceStation": "06:30:00",
+    "arrivalTimeSourceStation": "12:30:00",
+    "arrivesNextDay": false,
+    "seatMatrix": [
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ]
+    ],
+    "station": [
+      "Chennai",
+      "Vellore",
+      "Bangalore"
+    ],
+    "stationTime": {
+      "Chennai": "06:30:00",
+      "Vellore": "09:00:00",
+      "Bangalore": "12:30:00"
+    }
+  }
+]
