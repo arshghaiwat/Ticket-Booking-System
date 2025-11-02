@@ -115,9 +115,10 @@ Refund initiated for ₹250.
     ]
   }
 ]
-trains.json
-json
-Copy code
+```
+
+### `trains.json`
+```json
 [
   {
     "trainName": "Express Line",
@@ -133,28 +134,33 @@ Copy code
     ]
   }
 ]
-🏗️ Build & Run Instructions
-🧰 Prerequisites
-Java 17+
+```
+### `🏗️ Build & Run Instructions`
+#### `🧰 Prerequisites`
+#### `Java 17+`
 
-Gradle 8+
+#### `Gradle 8+`
 
-🧭 1️⃣ Clone the Repository
-bash
-Copy code
+#### `🧭 1️⃣ Clone the Repository`
+```bash
 git clone https://github.com/<your-username>/Ticket-Booking-System.git
 cd Ticket-Booking-System
-
-⚙️ 2️⃣ Build the Project
+```
+#### `⚙️ 2️⃣ Build the Project`
+```bash
 gradle build
+```
 
-▶️ 3️⃣ Run the Program
+#### `▶️ 3️⃣ Run the Program`
+```bash
 gradle run
+```
 
-Or, if you have a main class defined:
+```Or, if you have a main class defined:
 java -cp build/classes/java/main ticket.booking.Main
+```
 
-🧩 Key Learnings
+#### `🧩 Key Learnings`
 Implemented secure user authentication using BCrypt.
 
 Learned to use Optional and Stream API for concise, null-safe code.
@@ -165,7 +171,7 @@ Gained hands-on experience with UUID generation, Gradle structure, and functiona
 
 Understood how to design a modular console-based architecture in Java.
 
-🚀 Future Enhancements
+#### `🚀 Future Enhancements`
  Add Admin features to manage trains and users.
 
  Integrate with a SQL database instead of JSON.
@@ -174,9 +180,9 @@ Understood how to design a modular console-based architecture in Java.
 
  Add a frontend UI using React or JavaFX.
 
-🤝 Contributing
+#### `🤝 Contributing`
 Contributions are welcome!
 Feel free to open issues, suggest new features, or submit pull requests.
 
-🧑‍💻 Author
+#### `🧑‍💻 Author`
 Arsh Ghaiwat
