@@ -1,89 +1,103 @@
-🎫 Ticket Booking System — Java Console Application
+# 🎫 Ticket Booking System — Java Console Application
 
-A Java-based ticket booking console application that simulates real-world train ticket management — including user registration, login, train search, ticket booking, and cancellation.
-This project demonstrates practical implementation of OOP concepts, Java 8 functional programming, data persistence using JSON, and Gradle-based project structuring.
+A **Java-based ticket booking console application** that simulates real-world train ticket management — including user registration, login, train search, ticket booking, and cancellation.  
+This project demonstrates practical implementation of **OOP concepts**, **Java 8 functional programming**, **data persistence using JSON**, and **Gradle-based project structuring**.
 
-🚀 Features
+---
 
-✅ User Registration & Login
+## 🚀 Features
 
-Secure password storage using BCrypt hashing.
+### ✅ User Registration & Login
+- Secure password storage using **BCrypt hashing**.  
+- Validation for duplicate usernames and incorrect passwords.
 
-Validation for duplicate usernames and incorrect passwords.
+### ✅ Train Search & Listing
+- Search trains by source and destination.  
+- Displays train details, timings, and availability.
 
-✅ Train Search & Listing
+### ✅ Ticket Booking
+- Seats managed via a dynamic 2D `seatMatrix`.  
+- Automatically assigns an available seat.  
+- Generates unique Ticket IDs using **UUID**.
 
-Search trains by source and destination.
+### ✅ Ticket Cancellation
+- Cancels booked tickets and frees the corresponding seat.  
+- Updates both `users.json` and `trains.json` automatically.
 
-Displays train details, timings, and availability.
+### ✅ Persistent Data Storage
+- Uses **Jackson ObjectMapper** for reading/writing JSON files.  
+- Keeps user and train data synced between sessions.
 
-✅ Ticket Booking
+---
 
-Seats managed via a dynamic 2D seatMatrix.
+## ⚙️ Tech Stack
 
-Automatically assigns an available seat.
+| Component | Technology |
+|------------|-------------|
+| **Language** | Java 17+ |
+| **Build Tool** | Gradle |
+| **Data Storage** | JSON files (`users.json`, `trains.json`) |
+| **Libraries** | Jackson (JSON), BCrypt (password hashing) |
 
-Generates unique Ticket IDs using UUID.
+---
 
-✅ Ticket Cancellation
+## 🧩 Core Concepts Demonstrated
 
-Cancels booked tickets and frees the corresponding seat.
+| Concept | Description |
+|----------|--------------|
+| **Object-Oriented Design** | Entities (`User`, `Train`, `Ticket`) with service layers for clean separation of logic. |
+| **Functional Programming** | Streams, Optionals, Filters, Maps for cleaner, null-safe code. |
+| **BCrypt Hashing** | Secure password encryption and verification. |
+| **TypeReference (Jackson)** | Deserialize generic types like `List<User>` or `List<Train>`. |
+| **UUID Generation** | Unique identifiers for tickets and users. |
+| **Data Persistence** | File I/O synchronization using Jackson’s `ObjectMapper`. |
 
-Updates both users.json and trains.json automatically.
+---
 
-✅ Persistent Data Storage
+## 🧠 Example Workflow
 
-Uses Jackson ObjectMapper for reading/writing JSON files.
-
-Keeps user and train data synced between sessions.
-
-⚙️ Tech Stack
-Component	Technology
-Language	Java 17+
-Build Tool	Gradle
-Data Storage	JSON files (users.json, trains.json)
-Libraries	Jackson (JSON), BCrypt (password hashing)
-🧩 Core Concepts Demonstrated
-Concept	Description
-Object-Oriented Design	Entities (User, Train, Ticket) with service layers for clean separation of logic.
-Functional Programming	Streams, Optionals, Filters, Maps for cleaner, null-safe code.
-BCrypt Hashing	Secure password encryption and verification.
-TypeReference (Jackson)	Deserialize generic types like List<User> or List<Train>.
-UUID Generation	Unique identifiers for tickets and users.
-Data Persistence	File I/O synchronization using Jackson’s ObjectMapper.
-
-🧠 Example Workflow
-1️⃣ Register a User
+### 1️⃣ Register a User
 Enter name: arsh
 Enter age: 24
 Enter password: pass123
 ✅ User registered successfully!
 
-2️⃣ Login
+
+### 2️⃣ Login
 Enter username: arsh
 Enter password: pass123
 ✅ Login successful!
 
-3️⃣ Search and Book Ticket
+
+### 3️⃣ Search and Book Ticket
 Enter Source Station: Mumbai
 Enter Destination Station: Pune
 
 Available Trains:
-- Express Line (12345)
-- Superfast (45678)
 
-Select Train: 12345
+Express Line (12345)
+
+Superfast (45678)
+
+Select Train: 1
 ✅ Ticket booked successfully!
 Ticket ID: T001
 Seat: Row 1, Column 2
 
-4️⃣ Cancel Ticket
+
+
+### 4️⃣ Cancel Ticket
 Enter Ticket ID: T001
 ✅ Ticket cancelled successfully!
 Refund initiated for ₹250.
 
-💾 Data Persistence Format
-users.json
+
+---
+
+## 💾 Data Persistence Format
+
+### `users.json`
+```json
 [
   {
     "userId": "U001",
@@ -101,8 +115,9 @@ users.json
     ]
   }
 ]
-
 trains.json
+json
+Copy code
 [
   {
     "trainName": "Express Line",
@@ -118,32 +133,28 @@ trains.json
     ]
   }
 ]
-
 🏗️ Build & Run Instructions
-Prerequisites
-
+🧰 Prerequisites
 Java 17+
 
 Gradle 8+
 
-1️⃣ Clone the repository
+🧭 1️⃣ Clone the Repository
+bash
+Copy code
 git clone https://github.com/<your-username>/Ticket-Booking-System.git
 cd Ticket-Booking-System
 
-2️⃣ Build the project
+⚙️ 2️⃣ Build the Project
 gradle build
 
-3️⃣ Run the program
+▶️ 3️⃣ Run the Program
 gradle run
 
-
-Or if you have a main class defined:
-
+Or, if you have a main class defined:
 java -cp build/classes/java/main ticket.booking.Main
 
-
 🧩 Key Learnings
-
 Implemented secure user authentication using BCrypt.
 
 Learned to use Optional and Stream API for concise, null-safe code.
@@ -154,9 +165,7 @@ Gained hands-on experience with UUID generation, Gradle structure, and functiona
 
 Understood how to design a modular console-based architecture in Java.
 
-
 🚀 Future Enhancements
-
  Add Admin features to manage trains and users.
 
  Integrate with a SQL database instead of JSON.
@@ -165,14 +174,9 @@ Understood how to design a modular console-based architecture in Java.
 
  Add a frontend UI using React or JavaFX.
 
-
 🤝 Contributing
-
 Contributions are welcome!
 Feel free to open issues, suggest new features, or submit pull requests.
 
 🧑‍💻 Author
-
 Arsh Ghaiwat
-Associate System Engineer | Java Full Stack Learner
-📚 Passionate about writing clean, modular, and scalable Java applications.
